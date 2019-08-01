@@ -22,7 +22,7 @@
         }
       ],
       "outArguments": [],
-      "url": "https://<your-domain-here>/journeybuilder/execute",
+      "url": "https://jb-activity-web-push-form-prod.herokuapp.com/execute",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -34,22 +34,22 @@
   "configurationArguments": {
     "applicationExtensionKey": "__application_key_from_appcenter_here__",
     "save": {
-      "url": "https://<your-domain-here>/journeybuilder/save",
+      "url": "https://jb-activity-web-push-form-prod.herokuapp.com/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://<your-domain-here>/journeybuilder/publish",
+      "url": "https://jb-activity-web-push-form-prod.herokuapp.com/publish",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://<your-domain-here>/journeybuilder/stop",
+      "url": "jb-activity-web-push-form-prod.herokuapp.com/stop",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://<your-domain-here>/journeybuilder/validate",
+      "url": "jb-activity-web-push-form-prod.herokuapp.com/validate",
       "verb": "POST",
       "useJwt": true
     }
