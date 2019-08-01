@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/bundle.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div id="step1" class="step">
+        <main class="slds-col">
+            <h1>Web-Push Notification Template</h1>
+        </main>
+        <form class="myForm" id="myform" method="post" accept-charset="utf-8"
+            action="http://cl.exct.net/DEManager.aspx">
+            <p>
+                <label for="title">Title
+                    <input id="title" type="text" name="title" required>
+                </label>
+            </p>
+            <p>
+                <label for="locality">Select Country
+                    <select id="locality" name="locality"></select>
+                </label>
+            </p>
+            <p>
+                <label for="image">Image
+                    <select id="image">
+                        <option data-id="0" value="image1">Image 1</option>
+                        <option data-id="1" value="image1">Image 2</option>
+                        <option data-id="2" value="image1">Image 3</option>
+                        <option data-id="3" value="">None</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="icon">Icon
+                    <select id="icon">
+                        <option data-id="0" value="icon1">Icon 1</option>
+                        <option data-id="1" value="icon1">Icon 2</option>
+                        <option data-id="2" value="icon1">Icon 3</option>
+                        <option data-id="3" value="icon1">None</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="direction">Direction
+                    <select id="direction">
+                        <option data-id="0" value="ltr">Left-to-right</option>
+                        <option data-id="1" value="rtl">Right-to-left</option>
+                        <option data-id="2" value="auto">Auto</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label for="body">Body
+                    <textarea id="body" name="body" maxlength="500"></textarea>
+                </label>
+
+            </p>
+            <input name="_clientID" type="hidden" value="12345" />
+            <input name="_deExternalKey" type="hidden" value="place-DE-exrenal-key-here" />
+            <input type="hidden" name="_action" value="add" />
+            <input type="hidden" name="_returnXML" value="0" />
+            <input type="hidden" name="_successURL" value="http://localhost:5000/success.html" /><br />
+            <input type="hidden" name="_errorURL" value="http://localhost:5000/error.html" /><br />
+            <p>
+                <div class="form-actions">
+                    <button class="btn" type="submit" id="submitTemplate">Save</button>
+                </div>
+            </p>
+        </form>
+
+        <div class="form-actions">
+            <button class="btn" onclick="js/index2.html">Show Preview</button>
+        </div>
+    </div>
+    <div id="step2" class="step">
+        Here's a second page with some info on it.
+    </div>
+</body>
+
+</html>
